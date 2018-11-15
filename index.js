@@ -4,7 +4,16 @@ function lowerCaseDrivers(array){
   return newArray
 }
 
+
 function nameToAttributes(array){
-  const newArray = array.map(function(item) {return let newObject = {} newObject.firstName = item.split[0], newObject.lastName = item.split[1] }})
+  const newArray = array.map(function(item) {
+    let newObject = {}
+    newObject.firstName = item.split(" ")[0], newObject.lastName = item.split(" ")[1]
+    return newObject
+  })
   return newArray
+}
+
+function attributesToPhrase(array){
+
 }
